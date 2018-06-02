@@ -44,7 +44,7 @@ Public Class Sparepart
         Me.Hide()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         SparepartAdd.Show()
         Me.Hide()
     End Sub
@@ -72,6 +72,16 @@ Public Class Sparepart
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ADDstockSP.Show()
+        Me.Hide()
+    End Sub
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        delSP.Show()
+        Me.Hide()
+
     End Sub
 
     Private Sub Sparepart_load(sender As Object, e As EventArgs) Handles MyBase.Load

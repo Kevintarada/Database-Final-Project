@@ -46,6 +46,8 @@ Partial Class Sparepart
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -147,7 +149,7 @@ Partial Class Sparepart
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.ForeColor = System.Drawing.SystemColors.InfoText
-        Me.Button2.Location = New System.Drawing.Point(340, 288)
+        Me.Button2.Location = New System.Drawing.Point(417, 288)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(98, 44)
         Me.Button2.TabIndex = 29
@@ -158,7 +160,7 @@ Partial Class Sparepart
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button1.Location = New System.Drawing.Point(48, 288)
+        Me.Button1.Location = New System.Drawing.Point(33, 288)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(98, 44)
         Me.Button1.TabIndex = 28
@@ -273,12 +275,36 @@ Partial Class Sparepart
         Me.ListBox1.Size = New System.Drawing.Size(44, 228)
         Me.ListBox1.TabIndex = 16
         '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button4.ForeColor = System.Drawing.SystemColors.InfoText
+        Me.Button4.Location = New System.Drawing.Point(137, 288)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(130, 44)
+        Me.Button4.TabIndex = 32
+        Me.Button4.Text = "ADD product"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button5.ForeColor = System.Drawing.SystemColors.MenuText
+        Me.Button5.Location = New System.Drawing.Point(273, 288)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(102, 44)
+        Me.Button5.TabIndex = 33
+        Me.Button5.Text = "DELETE"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
         'Sparepart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Desktop
         Me.ClientSize = New System.Drawing.Size(800, 352)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -329,4 +355,6 @@ Partial Class Sparepart
     Friend WithEvents ListBox3 As ListBox
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 End Class

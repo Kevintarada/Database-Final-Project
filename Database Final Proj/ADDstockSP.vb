@@ -1,6 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-
-Public Class LaptopAdd
+Public Class ADDstockSP
     Dim con As MySqlConnection
     Dim str, query As String
     Dim comm As MySqlCommand
@@ -20,13 +19,13 @@ Public Class LaptopAdd
 
             Else
                 con.Open()
-                query = "update laptop set stock = stock + " + CStr(stock) + " where unit_id = " + CStr(id)
+                query = "update sparepart set stock = stock + " + CStr(stock) + " where sp_id = " + CStr(id)
                 comm = New MySqlCommand(query, con)
                 reader = comm.ExecuteReader
                 MessageBox.Show("stock has been succesfully added")
                 con.Close()
 
-                Laptop.Show()
+                Sparepart.Show()
                 Me.Hide()
             End If
         Catch ex As Exception

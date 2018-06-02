@@ -44,6 +44,16 @@ Public Class Laptop
         End Try
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        newLaptop.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        delLaptop.Show()
+        Me.Hide()
+    End Sub
+
     Private Sub Laptop_load(sender As Object, e As EventArgs) Handles MyBase.Load
         str = "server = localhost; user id = root; password=; database = Final_project; SslMode=none"
         con = New MySqlConnection(str)

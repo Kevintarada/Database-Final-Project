@@ -1,6 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-
-Public Class LaptopAdd
+Public Class delSP
     Dim con As MySqlConnection
     Dim str, query As String
     Dim comm As MySqlCommand
@@ -12,25 +11,24 @@ Public Class LaptopAdd
         str = "server = localhost; user id = root; password=; database = Final_project; SslMode=none"
         con = New MySqlConnection(str)
         Dim id As Integer = Val(TextBox1.Text)
-        Dim stock As Integer = Val(TextBox2.Text)
 
         Try
-            If TextBox1.Text.Length <= 0 Or TextBox2.Text.Length <= 0 Then
+            If TextBox1.Text.Length <= 0 Then
                 MessageBox.Show("you need to fill all boxes")
 
             Else
                 con.Open()
-                query = "update laptop set stock = stock + " + CStr(stock) + " where unit_id = " + CStr(id)
+                query = "delete from sparepart where sp_id = " + CStr(id)
                 comm = New MySqlCommand(query, con)
                 reader = comm.ExecuteReader
-                MessageBox.Show("stock has been succesfully added")
+                MessageBox.Show("product has been succesfully removed")
                 con.Close()
 
-                Laptop.Show()
+                Sparepart.Show()
                 Me.Hide()
             End If
         Catch ex As Exception
-            MessageBox.Show("error while adding stock")
+            MessageBox.Show("error while deleting product")
         End Try
     End Sub
 End Class

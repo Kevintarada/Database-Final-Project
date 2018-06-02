@@ -12,7 +12,7 @@ Public Class SparepartAdd
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        str = "server = localhost; user id = root; password=; database = Final_project;"
+        str = "server = localhost; user id = root; password=; database = Final_project;SSLMODE= NONE"
         query = "select * from sparepart_type"
         con = New MySqlConnection(str)
 
@@ -35,10 +35,12 @@ Public Class SparepartAdd
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim name As String = Val(TextBox1.Text)
-        Dim stock As Integer = Val(TextBox2.Text)
         str = "server = localhost; user id = root; password=; database = Final_project; SslMode=none"
         con = New MySqlConnection(str)
+        Dim name As String = TextBox1.Text
+        Dim stock As Integer = Val(TextBox2.Text)
+        Dim price As Integer = Val(TextBox3.Text)
+
 
         Try
             If TextBox1.Text.Length <= 0 Or TextBox2.Text.Length <= 0 Then
@@ -46,15 +48,14 @@ Public Class SparepartAdd
 
             Else
                 con.Open()
-                query = "INSERT INTO sparepart VALUES(NULL, " + CStr(TextBox3.Text) + ", NULL, " + CStr(TextBox1.Text) + "," + CStr(ComboBox1.SelectedValue) + ", " + CStr(stock) + ")"
+                query = "INSERT INTO sparepart VALUES(NULL, " + CStr(price) + ", NULL, " + CStr(name) + ",'Random Access Memmory', " + CStr(stock) + ")"
                 comm = New MySqlCommand(query, con)
                 reader = comm.ExecuteReader
                 MessageBox.Show("stock has been succesfully added")
                 con.Close()
 
-                TextBox1.Enabled = False
-                TextBox2.Enabled = False
-                Laptop.Show()
+
+                Sparepart.Show()
                 Me.Hide()
             End If
         Catch ex As Exception

@@ -34,15 +34,17 @@ Partial Class Laptop
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.Info
         Me.Button3.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button3.Location = New System.Drawing.Point(243, 308)
+        Me.Button3.Location = New System.Drawing.Point(378, 308)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(139, 47)
+        Me.Button3.Size = New System.Drawing.Size(100, 47)
         Me.Button3.TabIndex = 24
         Me.Button3.Text = "Refresh"
         Me.Button3.UseVisualStyleBackColor = False
@@ -53,7 +55,7 @@ Partial Class Laptop
         Me.Button2.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button2.Location = New System.Drawing.Point(40, 308)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(138, 47)
+        Me.Button2.Size = New System.Drawing.Size(65, 47)
         Me.Button2.TabIndex = 23
         Me.Button2.Text = "Add"
         Me.Button2.UseVisualStyleBackColor = False
@@ -62,9 +64,9 @@ Partial Class Laptop
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.Info
         Me.Button1.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button1.Location = New System.Drawing.Point(455, 309)
+        Me.Button1.Location = New System.Drawing.Point(498, 308)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(140, 46)
+        Me.Button1.Size = New System.Drawing.Size(97, 46)
         Me.Button1.TabIndex = 22
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = False
@@ -149,12 +151,36 @@ Partial Class Laptop
         Me.ListBox1.Size = New System.Drawing.Size(48, 260)
         Me.ListBox1.TabIndex = 13
         '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.SystemColors.Info
+        Me.Button4.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button4.Location = New System.Drawing.Point(121, 308)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(106, 45)
+        Me.Button4.TabIndex = 25
+        Me.Button4.Text = "ADD product"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.SystemColors.Info
+        Me.Button5.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Button5.Location = New System.Drawing.Point(243, 309)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(118, 46)
+        Me.Button5.TabIndex = 26
+        Me.Button5.Text = "delete"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
         'Laptop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.MenuText
         Me.ClientSize = New System.Drawing.Size(644, 370)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -187,4 +213,6 @@ Partial Class Laptop
     Friend WithEvents ListBox3 As ListBox
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 End Class

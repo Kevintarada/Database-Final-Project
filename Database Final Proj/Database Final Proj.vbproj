@@ -80,6 +80,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADDstockSP.Designer.vb">
+      <DependentUpon>ADDstockSP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADDstockSP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delLaptop.Designer.vb">
+      <DependentUpon>delLaptop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="delLaptop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delSP.Designer.vb">
+      <DependentUpon>delSP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="delSP.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +144,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="newLaptop.Designer.vb">
+      <DependentUpon>newLaptop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="newLaptop.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Sparepart.Designer.vb">
       <DependentUpon>Sparepart.vb</DependentUpon>
     </Compile>
@@ -140,6 +164,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ADDstockSP.resx">
+      <DependentUpon>ADDstockSP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delLaptop.resx">
+      <DependentUpon>delLaptop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delSP.resx">
+      <DependentUpon>delSP.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +193,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newLaptop.resx">
+      <DependentUpon>newLaptop.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sparepart.resx">
       <DependentUpon>Sparepart.vb</DependentUpon>
