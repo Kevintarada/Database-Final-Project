@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2018 at 10:43 AM
+-- Generation Time: Jun 02, 2018 at 12:17 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 5.6.33
 
@@ -172,7 +172,10 @@ CREATE TABLE `transaction` (
 
 INSERT INTO `transaction` (`trans_id`, `unit_id`, `sp_id`, `price`, `cust_id`, `emp_id`, `trans_date`) VALUES
 (1, 1, NULL, 2200, 2, 3, '06-01-2018'),
-(2, NULL, 2, 600, 3, 1, '06-02-2018');
+(2, NULL, 2, 600, 3, 1, '06-02-2018'),
+(3, 1, NULL, 2200, 1, 1, '06-02-2018'),
+(4, 1, NULL, 2200, 3, 1, '06-02-2018'),
+(5, 2, NULL, 1500, 1, 2, '06-02-2018');
 
 --
 -- Indexes for dumped tables
@@ -258,7 +261,7 @@ ALTER TABLE `sparepart_type`
 -- AUTO_INCREMENT for table `transaction`
 --
 ALTER TABLE `transaction`
-  MODIFY `trans_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `trans_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables

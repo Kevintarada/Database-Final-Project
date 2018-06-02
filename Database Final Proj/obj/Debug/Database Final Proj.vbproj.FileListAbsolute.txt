@@ -31,3 +31,33 @@ C:\GitHub\GitAr\dbfinalproj\Database Final Proj\obj\Debug\Database_Final_Proj.La
 C:\GitHub\GitAr\dbfinalproj\Database Final Proj\obj\Debug\Database_Final_Proj.Laptop.resources
 C:\GitHub\GitAr\dbfinalproj\Database Final Proj\obj\Debug\Database_Final_Proj.Sparepart.resources
 C:\GitHub\GitAr\dbfinalproj\Database Final Proj\obj\Debug\Database_Final_Proj.SparepartAdd.resources
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.exe.config
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.exe
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.pdb
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.xml
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Data.dll
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Web.dll
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Data.xml
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Web.xml
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.vbprojAssemblyReference.cache
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.exe.config
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.MainMenu.resources
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.AddTransaction.resources
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Transaction.resources
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.LaptopAdd.resources
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Laptop.resources
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Resources.resources
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Sparepart.resources
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.SparepartAdd.resources
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.vbproj.GenerateResource.cache
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.vbproj.CoreCompileInputs.cache
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.vbproj.CopyComplete
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.exe
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.xml
+C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.pdb

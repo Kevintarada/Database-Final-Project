@@ -100,10 +100,10 @@ Public Class AddTransaction
 
         Dim item As Integer
         Dim price As Integer
-        price = TextBox2.Text
+        price = CInt(TextBox2.Text)
         Dim customer As Integer
         Dim employee As Integer
-        Dim transdate As String
+        Dim transdate, txt, txt2 As String
         transdate = TextBox4.Text
 
         Try
@@ -116,29 +116,28 @@ Public Class AddTransaction
             comm2 = New MySqlCommand(query2, con)
             employee = Convert.ToInt32(comm2.ExecuteScalar())
 
-            For i As Integer = 0 To ListBox1.Items.Count - 1
-                If ListBox1.Items(i).ToString Is TextBox1.Text Then
-                    query3 = "SELECT unit_id FROM laptop WHERE unit_name = '" + CStr(TextBox1.Text) + "'"
-                    comm3 = New MySqlCommand(query3, con)
-                    item = Convert.ToInt32(comm3.ExecuteScalar())
+            txt = ListBox1.GetItemText(ListBox1.SelectedItem)
+            txt2 = ListBox2.GetItemText(ListBox2.SelectedItem)
 
-                    query4 = "INSERT INTO transaction VALUES(NULL, " + CStr(item) + ", NULL, " + CStr(price) + ", " + CStr(customer) + ", " + CStr(employee) + ", '" + CStr(transdate) + "')"
-                    comm4 = New MySqlCommand(query4, con)
-                    reader = comm4.ExecuteReader
-                End If
-            Next
+            If txt = TextBox1.Text Then
+                query3 = "SELECT unit_id FROM laptop WHERE unit_name = '" + CStr(TextBox1.Text) + "'"
+                comm3 = New MySqlCommand(query3, con)
+                item = Convert.ToInt32(comm3.ExecuteScalar())
 
-            For j As Integer = 0 To ListBox2.Items.Count - 1
-                If ListBox2.Items(j).ToString Is TextBox1.Text Then
-                    query3 = "SELECT sp_id FROM sparepart WHERE sp_name = '" + CStr(TextBox1.Text) + "'"
-                    comm3 = New MySqlCommand(query3, con)
-                    item = Convert.ToInt32(comm3.ExecuteScalar())
+                query4 = "INSERT INTO transaction VALUES(NULL, " + CStr(item) + ", NULL, " + CStr(price) + ", " + CStr(customer) + ", " + CStr(employee) + ", '" + CStr(transdate) + "')"
+                comm4 = New MySqlCommand(query4, con)
+                reader = comm4.ExecuteReader
+            ElseIf txt2 = TextBox1.Text Then
+                query3 = "SELECT sp_id FROM sparepart WHERE sp_name = '" + CStr(TextBox1.Text) + "'"
+                comm3 = New MySqlCommand(query3, con)
+                item = Convert.ToInt32(comm3.ExecuteScalar())
 
-                    query4 = "INSERT INTO transaction VALUES(NULL, NULL, " + CStr(item) + ", " + CStr(price) + ", " + CStr(customer) + ", " + CStr(employee) + ", '" + CStr(transdate) + "')"
-                    comm4 = New MySqlCommand(query4, con)
-                    reader = comm4.ExecuteReader
-                End If
-            Next
+                query4 = "INSERT INTO transaction VALUES(NULL, NULL, " + CStr(item) + ", " + CStr(price) + ", " + CStr(customer) + ", " + CStr(employee) + ", '" + CStr(transdate) + "')"
+                comm4 = New MySqlCommand(query4, con)
+                reader = comm4.ExecuteReader
+            Else
+                MessageBox.Show("Item not found in listboxes..", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
 
             MessageBox.Show("Transaction has been successfully added!", "Add Transaction", MessageBoxButtons.OK, MessageBoxIcon.Information)
             con.Close()
