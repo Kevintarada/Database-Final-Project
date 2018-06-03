@@ -32,7 +32,7 @@ Partial Class SPstockAdd
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button1.Location = New System.Drawing.Point(174, 129)
         Me.Button1.Name = "Button1"
@@ -75,7 +75,7 @@ Partial Class SPstockAdd
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button2.Location = New System.Drawing.Point(55, 129)
         Me.Button2.Name = "Button2"

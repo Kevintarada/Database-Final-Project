@@ -93,7 +93,7 @@ Partial Class LaptopAdd
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button1.Location = New System.Drawing.Point(178, 124)
         Me.Button1.Name = "Button1"
@@ -104,7 +104,7 @@ Partial Class LaptopAdd
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.Info
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button2.Location = New System.Drawing.Point(51, 124)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(116, 45)

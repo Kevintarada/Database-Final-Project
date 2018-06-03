@@ -46,16 +46,16 @@ Partial Class Customer
         '
         Me.ListBox2.FormattingEnabled = True
         Me.ListBox2.ItemHeight = 16
-        Me.ListBox2.Location = New System.Drawing.Point(45, 47)
+        Me.ListBox2.Location = New System.Drawing.Point(26, 63)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(153, 260)
+        Me.ListBox2.Size = New System.Drawing.Size(211, 244)
         Me.ListBox2.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(42, 27)
+        Me.Label2.Location = New System.Drawing.Point(23, 35)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(45, 17)
         Me.Label2.TabIndex = 6
@@ -63,30 +63,33 @@ Partial Class Customer
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(148, 332)
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button1.Location = New System.Drawing.Point(140, 313)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(89, 50)
+        Me.Button1.Size = New System.Drawing.Size(84, 37)
         Me.Button1.TabIndex = 10
-        Me.Button1.Text = "refresh"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Text = "Refresh"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(45, 332)
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button2.Location = New System.Drawing.Point(26, 313)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(85, 50)
+        Me.Button2.Size = New System.Drawing.Size(85, 37)
         Me.Button2.TabIndex = 11
-        Me.Button2.Text = "ADD"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.Text = "Add"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(357, 332)
+        Me.Button3.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button3.Location = New System.Drawing.Point(384, 313)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(105, 50)
+        Me.Button3.Size = New System.Drawing.Size(86, 37)
         Me.Button3.TabIndex = 12
-        Me.Button3.Text = "back"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.Text = "Back"
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
@@ -101,9 +104,9 @@ Partial Class Customer
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.GroupBox1.Location = New System.Drawing.Point(245, 45)
+        Me.GroupBox1.Location = New System.Drawing.Point(243, 35)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(217, 261)
+        Me.GroupBox1.Size = New System.Drawing.Size(227, 272)
         Me.GroupBox1.TabIndex = 13
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Information"
@@ -113,9 +116,9 @@ Partial Class Customer
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(6, 209)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(41, 17)
+        Me.Label6.Size = New System.Drawing.Size(42, 17)
         Me.Label6.TabIndex = 9
-        Me.Label6.Text = "email"
+        Me.Label6.Text = "Email"
         '
         'Label5
         '
@@ -190,19 +193,20 @@ Partial Class Customer
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(253, 332)
+        Me.Button4.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button4.Location = New System.Drawing.Point(262, 313)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(84, 49)
+        Me.Button4.Size = New System.Drawing.Size(80, 37)
         Me.Button4.TabIndex = 14
-        Me.Button4.Text = "update"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.Text = "Update"
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Customer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(500, 405)
+        Me.ClientSize = New System.Drawing.Size(500, 367)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button3)

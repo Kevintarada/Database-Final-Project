@@ -4,6 +4,8 @@ Public Class delSP
     Dim str, query, query2 As String
     Dim comm, comm2 As MySqlCommand
     Dim reader As MySqlDataReader
+    Dim adapter As New MySqlDataAdapter()
+    Dim dspt, dunit As New DataSet()
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Dispose()
@@ -14,6 +16,7 @@ Public Class delSP
         str = "server = localhost; user id = root; password=; database = Final_project; SslMode=none"
         con = New MySqlConnection(str)
 
+        TextBox2.ReadOnly = True
         Try
             con.Open()
             query = "select * from sparepart"
@@ -26,7 +29,34 @@ Public Class delSP
                     ListBox1.Items.Add(reader.Item("sp_name"))
                 Loop
             End If
+            reader.Close()
             con.Close()
+
+            con.Open()
+            query = "select * from sparepart_type"
+            comm = New MySqlCommand(query, con)
+            adapter.SelectCommand = comm
+            adapter.Fill(dspt)
+            adapter.Dispose()
+            comm.Dispose()
+            con.Close()
+
+            ComboBox1.DataSource = dspt.Tables(0)
+            ComboBox1.ValueMember = "spt_id"
+            ComboBox1.DisplayMember = "spt_name"
+
+            con.Open()
+            query = "select * from laptop"
+            comm = New MySqlCommand(query, con)
+            adapter.SelectCommand = comm
+            adapter.Fill(dunit)
+            adapter.Dispose()
+            comm.Dispose()
+            con.Close()
+
+            ComboBox2.DataSource = dunit.Tables(0)
+            ComboBox2.ValueMember = "unit_id"
+            ComboBox2.DisplayMember = "unit_name"
         Catch ex As Exception
             MessageBox.Show("connection error occured" + ex.Message)
 
@@ -38,10 +68,12 @@ Public Class delSP
         con = New MySqlConnection(str)
 
         Dim typeid As Integer
+        Dim unitid As Integer
 
         TextBox1.Clear()
         TextBox2.Clear()
-        TextBox3.Clear()
+        TextBox4.Clear()
+        TextBox6.Clear()
 
         Try
             con.Open()
@@ -52,18 +84,26 @@ Public Class delSP
             If reader.HasRows Then
                 While reader.Read()
                     typeid = reader.Item("spt_id")
+                    unitid = reader.Item("unit_id")
+
                     TextBox2.Text = reader.Item("sp_id")
                     TextBox1.Text = reader.Item("sp_name")
+                    TextBox4.Text = reader.Item("price")
+                    TextBox6.Text = reader.Item("stock")
                 End While
             End If
-            con.Close()
+            reader.Close()
 
-            con.Open()
-            query2 = "SELECT spt_name FROM sparepart_type WHERE spt_id = " + CStr(typeid)
-            comm2 = New MySqlCommand(query2, con)
-            TextBox3.Text = Convert.ToString(comm2.ExecuteScalar())
-            con.Close()
 
+            query = "SELECT spt_name FROM sparepart_type WHERE spt_id = " + CStr(typeid)
+            comm = New MySqlCommand(query, con)
+            ComboBox1.SelectedIndex = ComboBox1.FindStringExact(Convert.ToString(comm.ExecuteScalar()))
+
+            query = "SELECT unit_name FROM laptop WHERE unit_id = " + CStr(unitid)
+            comm = New MySqlCommand(query, con)
+            ComboBox2.SelectedIndex = ComboBox2.FindStringExact(Convert.ToString(comm.ExecuteScalar()))
+
+            con.Close()
         Catch ex As Exception
             MessageBox.Show("Error while selecting from Database" + ex.Message)
 
@@ -73,7 +113,10 @@ Public Class delSP
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         str = "server = localhost; user id = root; password=; database = Final_project; SslMode=none"
         con = New MySqlConnection(str)
+        Dim id As String = TextBox2.Text
+        Dim price As String = TextBox4.Text
         Dim name As String = TextBox1.Text
+        Dim stock As String = TextBox6.Text
 
         Try
             If TextBox1.Text.Length <= 0 Then
@@ -81,7 +124,7 @@ Public Class delSP
 
             Else
                 con.Open()
-                query = "delete from sparepart where sp_name = '" + CStr(name) + "'"
+                query = "UPDATE sparepart SET price =" + price + ", unit_id = " + CStr(ComboBox2.SelectedValue) + ", sp_name = '" + CStr(name) + "', spt_id = " + CStr(ComboBox1.SelectedValue) + ", stock = " + CStr(stock) + "WHERE sp_id = " + CStr(id)
                 comm = New MySqlCommand(query, con)
                 reader = comm.ExecuteReader
                 MessageBox.Show("product has been succesfully removed")

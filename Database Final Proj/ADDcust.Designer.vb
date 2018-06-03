@@ -37,11 +37,11 @@ Partial Class ADDcust
         'Button1
         '
         Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button1.Location = New System.Drawing.Point(37, 222)
+        Me.Button1.Location = New System.Drawing.Point(237, 126)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(78, 37)
+        Me.Button1.Size = New System.Drawing.Size(168, 40)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "ADD"
+        Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
@@ -83,7 +83,7 @@ Partial Class ADDcust
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(36, 109)
+        Me.Label3.Location = New System.Drawing.Point(236, 19)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(48, 17)
         Me.Label3.TabIndex = 5
@@ -93,7 +93,7 @@ Partial Class ADDcust
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(41, 154)
+        Me.Label4.Location = New System.Drawing.Point(241, 64)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(41, 17)
         Me.Label4.TabIndex = 6
@@ -101,27 +101,27 @@ Partial Class ADDcust
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(39, 129)
+        Me.TextBox3.Location = New System.Drawing.Point(239, 39)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(166, 22)
         Me.TextBox3.TabIndex = 7
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(37, 174)
+        Me.TextBox4.Location = New System.Drawing.Point(237, 84)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(168, 22)
         Me.TextBox4.TabIndex = 8
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button2.Location = New System.Drawing.Point(127, 222)
+        Me.Button2.Location = New System.Drawing.Point(37, 126)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(78, 37)
+        Me.Button2.Size = New System.Drawing.Size(168, 40)
         Me.Button2.TabIndex = 9
-        Me.Button2.Text = "back"
+        Me.Button2.Text = "Back"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'ADDcust
@@ -129,7 +129,7 @@ Partial Class ADDcust
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(226, 290)
+        Me.ClientSize = New System.Drawing.Size(447, 199)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
@@ -141,7 +141,7 @@ Partial Class ADDcust
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "ADDcust"
-        Me.Text = "ADDcust"
+        Me.Text = "Add Customer"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

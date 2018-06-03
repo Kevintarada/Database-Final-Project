@@ -23,6 +23,7 @@ Partial Class AddTransaction
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
@@ -43,7 +44,6 @@ Partial Class AddTransaction
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -71,9 +71,21 @@ Partial Class AddTransaction
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Add "
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Button2.Location = New System.Drawing.Point(731, 70)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(115, 32)
+        Me.Button2.TabIndex = 23
+        Me.Button2.Text = "Back"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Button1.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button1.Location = New System.Drawing.Point(610, 70)
@@ -258,18 +270,6 @@ Partial Class AddTransaction
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(209, 184)
         Me.ListBox1.TabIndex = 0
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Button2.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button2.Location = New System.Drawing.Point(731, 70)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(115, 32)
-        Me.Button2.TabIndex = 23
-        Me.Button2.Text = "Back"
-        Me.Button2.UseVisualStyleBackColor = False
         '
         'AddTransaction
         '

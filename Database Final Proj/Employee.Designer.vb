@@ -42,16 +42,16 @@ Partial Class Employee
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(31, 53)
+        Me.ListBox1.Location = New System.Drawing.Point(36, 53)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(158, 244)
+        Me.ListBox1.Size = New System.Drawing.Size(173, 228)
         Me.ListBox1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(28, 33)
+        Me.Label1.Location = New System.Drawing.Point(33, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(45, 17)
         Me.Label1.TabIndex = 1
@@ -66,9 +66,9 @@ Partial Class Employee
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.GroupBox1.Location = New System.Drawing.Point(204, 52)
+        Me.GroupBox1.Location = New System.Drawing.Point(226, 33)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(175, 244)
+        Me.GroupBox1.Size = New System.Drawing.Size(190, 248)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Information"
@@ -76,7 +76,7 @@ Partial Class Employee
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 163)
+        Me.Label4.Location = New System.Drawing.Point(16, 166)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(53, 17)
         Me.Label4.TabIndex = 5
@@ -85,7 +85,7 @@ Partial Class Employee
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 100)
+        Me.Label3.Location = New System.Drawing.Point(16, 103)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(45, 17)
         Me.Label3.TabIndex = 4
@@ -94,7 +94,7 @@ Partial Class Employee
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 36)
+        Me.Label2.Location = New System.Drawing.Point(16, 39)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(21, 17)
         Me.Label2.TabIndex = 3
@@ -102,59 +102,59 @@ Partial Class Employee
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(6, 183)
+        Me.TextBox3.Location = New System.Drawing.Point(16, 186)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(147, 22)
+        Me.TextBox3.Size = New System.Drawing.Size(156, 22)
         Me.TextBox3.TabIndex = 2
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(6, 120)
+        Me.TextBox2.Location = New System.Drawing.Point(16, 123)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(147, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(156, 22)
         Me.TextBox2.TabIndex = 1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(6, 56)
+        Me.TextBox1.Location = New System.Drawing.Point(16, 59)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(147, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(156, 22)
         Me.TextBox1.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(36, 324)
+        Me.Button1.Location = New System.Drawing.Point(36, 299)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(104, 46)
+        Me.Button1.Size = New System.Drawing.Size(79, 35)
         Me.Button1.TabIndex = 3
-        Me.Button1.Text = "ADD"
+        Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(275, 324)
+        Me.Button2.Location = New System.Drawing.Point(333, 301)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(104, 46)
+        Me.Button2.Size = New System.Drawing.Size(83, 35)
         Me.Button2.TabIndex = 4
-        Me.Button2.Text = "back"
+        Me.Button2.Text = "Back"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(151, 392)
+        Me.Button3.Location = New System.Drawing.Point(130, 301)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(104, 46)
+        Me.Button3.Size = New System.Drawing.Size(79, 35)
         Me.Button3.TabIndex = 5
         Me.Button3.Text = "Refresh"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(156, 326)
+        Me.Button4.Location = New System.Drawing.Point(226, 301)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(98, 43)
+        Me.Button4.Size = New System.Drawing.Size(87, 35)
         Me.Button4.TabIndex = 6
-        Me.Button4.Text = "UPDATE"
+        Me.Button4.Text = "Update"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Employee
@@ -162,7 +162,7 @@ Partial Class Employee
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(438, 450)
+        Me.ClientSize = New System.Drawing.Size(455, 361)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)

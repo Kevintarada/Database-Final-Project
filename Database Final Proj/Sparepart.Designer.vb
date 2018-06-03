@@ -23,6 +23,10 @@ Partial Class Sparepart
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -38,10 +42,6 @@ Partial Class Sparepart
         Me.ListBox2 = New System.Windows.Forms.ListBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -67,6 +67,38 @@ Partial Class Sparepart
         Me.GroupBox1.TabIndex = 31
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Information"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(160, 175)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(135, 22)
+        Me.TextBox6.TabIndex = 11
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(164, 155)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(43, 17)
+        Me.Label12.TabIndex = 10
+        Me.Label12.Text = "Stock"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(15, 175)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(135, 22)
+        Me.TextBox5.TabIndex = 9
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(19, 155)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(40, 17)
+        Me.Label11.TabIndex = 8
+        Me.Label11.Text = "Price"
         '
         'TextBox4
         '
@@ -134,7 +166,7 @@ Partial Class Sparepart
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button3.ForeColor = System.Drawing.SystemColors.InfoText
         Me.Button3.Location = New System.Drawing.Point(608, 288)
         Me.Button3.Name = "Button3"
@@ -145,7 +177,7 @@ Partial Class Sparepart
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button2.ForeColor = System.Drawing.SystemColors.InfoText
         Me.Button2.Location = New System.Drawing.Point(473, 288)
         Me.Button2.Name = "Button2"
@@ -156,7 +188,7 @@ Partial Class Sparepart
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button1.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button1.Location = New System.Drawing.Point(28, 288)
         Me.Button1.Name = "Button1"
@@ -185,7 +217,7 @@ Partial Class Sparepart
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Button4.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button4.ForeColor = System.Drawing.SystemColors.InfoText
         Me.Button4.Location = New System.Drawing.Point(175, 288)
         Me.Button4.Name = "Button4"
@@ -196,46 +228,14 @@ Partial Class Sparepart
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button5.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button5.ForeColor = System.Drawing.SystemColors.MenuText
         Me.Button5.Location = New System.Drawing.Point(336, 288)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(102, 44)
         Me.Button5.TabIndex = 33
-        Me.Button5.Text = "Delete"
+        Me.Button5.Text = "Update"
         Me.Button5.UseVisualStyleBackColor = False
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(15, 175)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(135, 22)
-        Me.TextBox5.TabIndex = 9
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(19, 155)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(40, 17)
-        Me.Label11.TabIndex = 8
-        Me.Label11.Text = "Price"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(160, 175)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(135, 22)
-        Me.TextBox6.TabIndex = 11
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(164, 155)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(43, 17)
-        Me.Label12.TabIndex = 10
-        Me.Label12.Text = "Stock"
         '
         'Sparepart
         '

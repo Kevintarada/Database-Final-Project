@@ -6,28 +6,40 @@ Public Class SparepartAdd
     Dim comm As MySqlCommand
     Dim reader As MySqlDataReader
     Public selected As Integer
-    Dim i As Integer = 0
     Dim adapter As New MySqlDataAdapter()
-    Dim ds As New DataSet()
+    Dim dspt, dunit As New DataSet()
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         str = "server = localhost; user id = root; password=; database = Final_project;SSLMODE= NONE"
-        query = "select * from sparepart_type"
         con = New MySqlConnection(str)
 
         Try
             con.Open()
+            query = "select * from sparepart_type"
             comm = New MySqlCommand(query, con)
             adapter.SelectCommand = comm
-            adapter.Fill(ds)
+            adapter.Fill(dspt)
             adapter.Dispose()
             comm.Dispose()
             con.Close()
 
-            ComboBox1.DataSource = ds.Tables(0)
+            ComboBox1.DataSource = dspt.Tables(0)
             ComboBox1.ValueMember = "spt_id"
             ComboBox1.DisplayMember = "spt_name"
+
+            con.Open()
+            query = "select * from laptop"
+            comm = New MySqlCommand(query, con)
+            adapter.SelectCommand = comm
+            adapter.Fill(dunit)
+            adapter.Dispose()
+            comm.Dispose()
+            con.Close()
+
+            ComboBox2.DataSource = dunit.Tables(0)
+            ComboBox2.ValueMember = "unit_id"
+            ComboBox2.DisplayMember = "unit_name"
         Catch ex As Exception
             MessageBox.Show("connection error occured" + ex.Message)
         End Try
@@ -52,7 +64,7 @@ Public Class SparepartAdd
 
             Else
                 con.Open()
-                query = "INSERT INTO sparepart VALUES(NULL, " + CStr(price) + ", NULL, " + CStr(name) + ",1, " + CStr(stock) + ")"
+                query = "INSERT INTO sparepart VALUES(NULL, " + CStr(price) + ", " + CStr(ComboBox2.SelectedValue) + ", " + CStr(name) + "," + CStr(ComboBox1.SelectedValue) + ", " + CStr(stock) + ")"
                 comm = New MySqlCommand(query, con)
                 reader = comm.ExecuteReader
                 MessageBox.Show("stock has been succesfully added")

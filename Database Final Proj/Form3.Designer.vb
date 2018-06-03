@@ -41,7 +41,7 @@ Partial Class Transaction
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
         Me.Button1.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button1.Location = New System.Drawing.Point(662, 307)
@@ -164,7 +164,7 @@ Partial Class Transaction
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
         Me.Button2.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button2.Location = New System.Drawing.Point(353, 307)
@@ -176,7 +176,7 @@ Partial Class Transaction
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button3.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
         Me.Button3.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button3.Location = New System.Drawing.Point(40, 307)

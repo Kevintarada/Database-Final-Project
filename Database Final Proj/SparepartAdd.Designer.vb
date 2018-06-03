@@ -32,12 +32,14 @@ Partial Class SparepartAdd
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(266, 83)
+        Me.Label2.Location = New System.Drawing.Point(31, 137)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(43, 17)
         Me.Label2.TabIndex = 9
@@ -48,33 +50,33 @@ Partial Class SparepartAdd
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(31, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(110, 17)
+        Me.Label1.Size = New System.Drawing.Size(45, 17)
         Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Sparepart name"
+        Me.Label1.Text = "Name"
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button1.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button1.Location = New System.Drawing.Point(295, 148)
+        Me.Button1.Location = New System.Drawing.Point(269, 144)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(146, 49)
+        Me.Button1.Size = New System.Drawing.Size(93, 35)
         Me.Button1.TabIndex = 7
         Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(269, 103)
+        Me.TextBox2.Location = New System.Drawing.Point(34, 157)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(172, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(197, 22)
         Me.TextBox2.TabIndex = 6
         '
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(34, 47)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(172, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(197, 22)
         Me.TextBox1.TabIndex = 5
         '
         'Label3
@@ -88,9 +90,9 @@ Partial Class SparepartAdd
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(34, 103)
+        Me.TextBox3.Location = New System.Drawing.Point(34, 105)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(172, 22)
+        Me.TextBox3.Size = New System.Drawing.Size(197, 22)
         Me.TextBox3.TabIndex = 10
         '
         'Label4
@@ -107,26 +109,45 @@ Partial Class SparepartAdd
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(269, 45)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(172, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(197, 24)
         Me.ComboBox1.TabIndex = 14
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button2.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button2.Location = New System.Drawing.Point(34, 148)
+        Me.Button2.Location = New System.Drawing.Point(379, 144)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(146, 49)
+        Me.Button2.Size = New System.Drawing.Size(87, 35)
         Me.Button2.TabIndex = 15
         Me.Button2.Text = "Back"
         Me.Button2.UseVisualStyleBackColor = False
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(269, 105)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(197, 24)
+        Me.ComboBox2.TabIndex = 17
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(266, 83)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(33, 17)
+        Me.Label5.TabIndex = 16
+        Me.Label5.Text = "Unit"
         '
         'SparepartAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Desktop
-        Me.ClientSize = New System.Drawing.Size(469, 221)
+        Me.ClientSize = New System.Drawing.Size(495, 203)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label4)
@@ -155,4 +176,6 @@ Partial Class SparepartAdd
     Friend WithEvents Label4 As Label
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Label5 As Label
 End Class

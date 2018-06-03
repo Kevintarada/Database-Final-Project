@@ -32,12 +32,21 @@ Partial Class delLaptop
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(310, 118)
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button1.Location = New System.Drawing.Point(349, 262)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(105, 45)
         Me.Button1.TabIndex = 0
@@ -46,7 +55,7 @@ Partial Class delLaptop
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(310, 31)
+        Me.TextBox1.Location = New System.Drawing.Point(39, 42)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(240, 22)
         Me.TextBox1.TabIndex = 1
@@ -57,7 +66,7 @@ Partial Class delLaptop
         Me.Label1.BackColor = System.Drawing.SystemColors.ControlText
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Default
         Me.Label1.ForeColor = System.Drawing.Color.GhostWhite
-        Me.Label1.Location = New System.Drawing.Point(307, 11)
+        Me.Label1.Location = New System.Drawing.Point(36, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(69, 17)
         Me.Label1.TabIndex = 2
@@ -73,12 +82,13 @@ Partial Class delLaptop
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button2.Location = New System.Drawing.Point(445, 118)
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button2.Location = New System.Drawing.Point(484, 262)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(105, 45)
         Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Delete"
+        Me.Button2.Text = "Update"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'ListBox1
@@ -87,7 +97,7 @@ Partial Class delLaptop
         Me.ListBox1.ItemHeight = 16
         Me.ListBox1.Location = New System.Drawing.Point(12, 31)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(279, 132)
+        Me.ListBox1.Size = New System.Drawing.Size(279, 276)
         Me.ListBox1.TabIndex = 5
         '
         'Label3
@@ -103,7 +113,7 @@ Partial Class delLaptop
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(346, 47)
+        Me.Label4.Location = New System.Drawing.Point(75, 58)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(0, 17)
         Me.Label4.TabIndex = 9
@@ -114,7 +124,7 @@ Partial Class delLaptop
         Me.Label5.BackColor = System.Drawing.SystemColors.ControlText
         Me.Label5.Cursor = System.Windows.Forms.Cursors.Default
         Me.Label5.ForeColor = System.Drawing.Color.GhostWhite
-        Me.Label5.Location = New System.Drawing.Point(307, 61)
+        Me.Label5.Location = New System.Drawing.Point(36, 72)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(93, 17)
         Me.Label5.TabIndex = 8
@@ -122,29 +132,102 @@ Partial Class delLaptop
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(310, 81)
+        Me.TextBox2.Location = New System.Drawing.Point(39, 92)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(240, 22)
         Me.TextBox2.TabIndex = 7
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(209, 105)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(0, 17)
+        Me.Label6.TabIndex = 12
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(75, 153)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(0, 17)
+        Me.Label8.TabIndex = 15
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.SystemColors.ControlText
+        Me.Label9.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Label9.ForeColor = System.Drawing.Color.GhostWhite
+        Me.Label9.Location = New System.Drawing.Point(36, 175)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(43, 17)
+        Me.Label9.TabIndex = 14
+        Me.Label9.Text = "Stock"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(39, 195)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(240, 22)
+        Me.TextBox4.TabIndex = 13
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.SystemColors.ControlText
+        Me.Label7.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Label7.ForeColor = System.Drawing.Color.GhostWhite
+        Me.Label7.Location = New System.Drawing.Point(36, 123)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(40, 17)
+        Me.Label7.TabIndex = 17
+        Me.Label7.Text = "Price"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(39, 143)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(240, 22)
+        Me.TextBox3.TabIndex = 16
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.GroupBox1.Location = New System.Drawing.Point(310, 17)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(312, 233)
+        Me.GroupBox1.TabIndex = 18
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Edit"
         '
         'delLaptop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(582, 184)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox2)
+        Me.ClientSize = New System.Drawing.Size(651, 328)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "delLaptop"
-        Me.Text = "delLaptop"
+        Me.Text = "Update Laptop"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -160,4 +243,11 @@ Partial Class delLaptop
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

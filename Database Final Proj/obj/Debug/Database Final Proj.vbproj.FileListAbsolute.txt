@@ -142,3 +142,9 @@ C:\kevdb\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Pro
 C:\kevdb\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.ADDcust.resources
 C:\kevdb\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.UPDTcust.resources
 C:\kevdb\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.UPDTemp.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.ADDcust.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.ADDemployee.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Customer.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Employee.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.UPDTcust.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.UPDTemp.resources

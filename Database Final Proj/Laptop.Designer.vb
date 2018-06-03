@@ -44,7 +44,7 @@ Partial Class Laptop
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.Info
+        Me.Button3.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button3.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button3.Location = New System.Drawing.Point(383, 287)
         Me.Button3.Name = "Button3"
@@ -55,7 +55,7 @@ Partial Class Laptop
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.SystemColors.Info
+        Me.Button2.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button2.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button2.Location = New System.Drawing.Point(31, 288)
         Me.Button2.Name = "Button2"
@@ -66,7 +66,7 @@ Partial Class Laptop
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.Info
+        Me.Button1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button1.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button1.Location = New System.Drawing.Point(499, 287)
         Me.Button1.Name = "Button1"
@@ -103,7 +103,7 @@ Partial Class Laptop
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.SystemColors.Info
+        Me.Button4.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button4.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Button4.Location = New System.Drawing.Point(140, 289)
         Me.Button4.Name = "Button4"
@@ -114,13 +114,13 @@ Partial Class Laptop
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.SystemColors.Info
+        Me.Button5.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Button5.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button5.Location = New System.Drawing.Point(265, 289)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(105, 46)
         Me.Button5.TabIndex = 26
-        Me.Button5.Text = "Delete"
+        Me.Button5.Text = "Update"
         Me.Button5.UseVisualStyleBackColor = False
         '
         'GroupBox1

@@ -71,6 +71,8 @@ Public Class Customer
         str = "server = localhost; user id = root; password=; database = final_project; sslmode = none"
         con = New MySqlConnection(str)
 
+        TextBox1.ReadOnly = True
+
         Try
             con.Open()
             query = "select * from customer"

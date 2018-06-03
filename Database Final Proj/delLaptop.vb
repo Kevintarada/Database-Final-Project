@@ -17,17 +17,17 @@ Public Class delLaptop
 
             Else
                 con.Open()
-                query = "delete from laptop where unit_id = " + CStr(id)
+                query = "UPDATE laptop SET unit_name='" + CStr(TextBox2.Text) + "', price=" + CStr(TextBox3.Text) + ",stock=" + CStr(TextBox4.Text) + " WHERE unit_id = " + CStr(id)
                 comm = New MySqlCommand(query, con)
                 reader = comm.ExecuteReader
-                MessageBox.Show("stock has been succesfully removed")
+                MessageBox.Show("stock has been succesfully updated")
                 con.Close()
 
                 Laptop.Show()
                 Me.Hide()
             End If
         Catch ex As Exception
-            MessageBox.Show("error while deleteing stock")
+            MessageBox.Show("Error While updating stock")
         End Try
     End Sub
 
@@ -35,9 +35,11 @@ Public Class delLaptop
         str = "server = localhost; user id = root; password=; database = Final_project; SslMode=none"
         con = New MySqlConnection(str)
 
+        TextBox1.ReadOnly = True
+
         Try
             con.Open()
-            query = "select * from laptop"
+            query = "Select * from laptop"
             comm = New MySqlCommand(query, con)
             reader = comm.ExecuteReader
 
@@ -49,7 +51,7 @@ Public Class delLaptop
             End If
             con.Close()
         Catch ex As Exception
-            MessageBox.Show("connection error occured" + ex.Message)
+            MessageBox.Show("connection Error occured" + ex.Message)
 
         End Try
     End Sub
@@ -60,10 +62,11 @@ Public Class delLaptop
 
         TextBox1.Clear()
         TextBox2.Clear()
-
+        TextBox3.Clear()
+        TextBox4.Clear()
         Try
             con.Open()
-            query = "select * from laptop where unit_name = '" + ListBox1.SelectedItem.ToString + "'"
+            query = "Select * from laptop where unit_name = '" + ListBox1.SelectedItem.ToString + "'"
             comm = New MySqlCommand(query, con)
             reader = comm.ExecuteReader
 
@@ -72,6 +75,8 @@ Public Class delLaptop
 
                     TextBox1.Text = reader.Item("unit_id")
                     TextBox2.Text = reader.Item("unit_name")
+                    TextBox3.Text = reader.Item("price")
+                    TextBox4.Text = reader.Item("stock")
                 End While
             End If
             con.Close()
