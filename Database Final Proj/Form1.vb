@@ -13,4 +13,14 @@
         Me.Hide()
         Sparepart.Show()
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Customer.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Employee.Show()
+        Me.Hide()
+    End Sub
 End Class

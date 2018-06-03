@@ -80,10 +80,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADDemployee.Designer.vb">
+      <DependentUpon>ADDemployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADDemployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ADDstockSP.Designer.vb">
       <DependentUpon>ADDstockSP.vb</DependentUpon>
     </Compile>
     <Compile Include="ADDstockSP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.vb">
+      <DependentUpon>Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="delLaptop.Designer.vb">
@@ -96,6 +108,12 @@
       <DependentUpon>delSP.vb</DependentUpon>
     </Compile>
     <Compile Include="delSP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.vb">
+      <DependentUpon>Employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
@@ -164,14 +182,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ADDemployee.resx">
+      <DependentUpon>ADDemployee.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADDstockSP.resx">
       <DependentUpon>ADDstockSP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="delLaptop.resx">
       <DependentUpon>delLaptop.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="delSP.resx">
       <DependentUpon>delSP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

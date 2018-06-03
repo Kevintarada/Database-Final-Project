@@ -95,3 +95,6 @@ C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database 
 C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.xml
 C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.pdb
 >>>>>>> 9360240498d95d2cb9aa4b1e692db0aa3e8747ef
+C:\kevdb\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Customer.resources
+C:\kevdb\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Employee.resources
+C:\kevdb\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.ADDemployee.resources
