@@ -34,6 +34,8 @@ Public Class SparepartAdd
         End Try
     End Sub
 
+
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         str = "server = localhost; user id = root; password=; database = Final_project; SslMode=none"
         con = New MySqlConnection(str)
@@ -48,7 +50,7 @@ Public Class SparepartAdd
 
             Else
                 con.Open()
-                query = "INSERT INTO sparepart VALUES(NULL, " + CStr(price) + ", NULL, " + CStr(name) + ",'Random Access Memmory', " + CStr(stock) + ")"
+                query = "INSERT INTO sparepart VALUES(NULL, " + CStr(price) + ", NULL, " + CStr(name) + ",1, " + CStr(stock) + ")"
                 comm = New MySqlCommand(query, con)
                 reader = comm.ExecuteReader
                 MessageBox.Show("stock has been succesfully added")

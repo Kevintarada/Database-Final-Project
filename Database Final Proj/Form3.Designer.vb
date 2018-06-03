@@ -34,6 +34,7 @@ Partial Class Transaction
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,7 +43,7 @@ Partial Class Transaction
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
         Me.Button1.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button1.Location = New System.Drawing.Point(353, 298)
+        Me.Button1.Location = New System.Drawing.Point(572, 307)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(278, 51)
         Me.Button1.TabIndex = 6
@@ -160,12 +161,25 @@ Partial Class Transaction
         Me.ListBox1.Size = New System.Drawing.Size(209, 184)
         Me.ListBox1.TabIndex = 0
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Button2.Location = New System.Drawing.Point(115, 307)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(278, 51)
+        Me.Button2.TabIndex = 10
+        Me.Button2.Text = "Refresh"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Transaction
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.MenuText
         Me.ClientSize = New System.Drawing.Size(972, 379)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Transaction"
@@ -188,4 +202,5 @@ Partial Class Transaction
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Label5 As Label
     Friend WithEvents ListBox5 As ListBox
+    Friend WithEvents Button2 As Button
 End Class
