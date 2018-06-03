@@ -95,3 +95,40 @@ C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database 
 C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.xml
 C:\GitHub\GitUloh\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.pdb
 >>>>>>> 9360240498d95d2cb9aa4b1e692db0aa3e8747ef
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.exe.config
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.exe
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.pdb
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.xml
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Data.dll
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.dll
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\MySQL.Data.EntityFrameworkCore.dll
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Web.dll
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Data.xml
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\MySql.Web.xml
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.vbprojAssemblyReference.cache
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.exe.config
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.ADDstockSP.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.delLaptop.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.delSP.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.MainMenu.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.AddTransaction.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Transaction.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.LaptopAdd.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Laptop.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Resources.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.newLaptop.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.Sparepart.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.SparepartAdd.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.vbproj.GenerateResource.cache
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.vbproj.CoreCompileInputs.cache
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.vbproj.CopyComplete
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.exe
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.xml
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database Final Proj.pdb
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\obj\Debug\Database_Final_Proj.SPstockAdd.resources
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.exe.CodeAnalysisLog.xml
+C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.exe.lastcodeanalysissucceeded

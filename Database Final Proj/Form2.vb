@@ -5,6 +5,12 @@ Public Class AddTransaction
     Dim con As MySqlConnection
     Dim str, query, query2, query3, query4, query5 As String
     Dim comm, comm2, comm3, comm4, comm5 As MySqlCommand
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Dispose()
+        Transaction.Show()
+    End Sub
+
     Dim reader, reader2, reader3, reader4, reader5 As MySqlDataReader
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
@@ -127,6 +133,12 @@ Public Class AddTransaction
                 query4 = "INSERT INTO transaction VALUES(NULL, " + CStr(item) + ", NULL, " + CStr(price) + ", " + CStr(customer) + ", " + CStr(employee) + ", '" + CStr(transdate) + "')"
                 comm4 = New MySqlCommand(query4, con)
                 reader = comm4.ExecuteReader
+                reader.Close()
+
+                query5 = "UPDATE laptop SET stock = stock-1 WHERE unit_name = '" + CStr(TextBox1.Text) + "'"
+                comm5 = New MySqlCommand(query5, con)
+                reader = comm5.ExecuteReader
+
             ElseIf txt2 = TextBox1.Text Then
                 query3 = "SELECT sp_id FROM sparepart WHERE sp_name = '" + CStr(TextBox1.Text) + "'"
                 comm3 = New MySqlCommand(query3, con)
@@ -135,6 +147,11 @@ Public Class AddTransaction
                 query4 = "INSERT INTO transaction VALUES(NULL, NULL, " + CStr(item) + ", " + CStr(price) + ", " + CStr(customer) + ", " + CStr(employee) + ", '" + CStr(transdate) + "')"
                 comm4 = New MySqlCommand(query4, con)
                 reader = comm4.ExecuteReader
+                reader.Close()
+
+                query5 = "UPDATE sparepart SET stock = stock-1 WHERE sp_name = '" + CStr(TextBox1.Text) + "'"
+                comm5 = New MySqlCommand(query5, con)
+                reader = comm5.ExecuteReader
             Else
                 MessageBox.Show("Item not found in listboxes..", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If

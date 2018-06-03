@@ -31,6 +31,7 @@ Partial Class SparepartAdd
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label2
@@ -55,7 +56,7 @@ Partial Class SparepartAdd
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button1.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Button1.Location = New System.Drawing.Point(159, 149)
+        Me.Button1.Location = New System.Drawing.Point(295, 148)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(146, 49)
         Me.Button1.TabIndex = 7
@@ -109,12 +110,24 @@ Partial Class SparepartAdd
         Me.ComboBox1.Size = New System.Drawing.Size(172, 24)
         Me.ComboBox1.TabIndex = 14
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Button2.Location = New System.Drawing.Point(34, 148)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(146, 49)
+        Me.Button2.TabIndex = 15
+        Me.Button2.Text = "Back"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'SparepartAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Desktop
         Me.ClientSize = New System.Drawing.Size(469, 221)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -141,4 +154,5 @@ Partial Class SparepartAdd
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Button2 As Button
 End Class

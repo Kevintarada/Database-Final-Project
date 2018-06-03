@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj\bin\Debug\Database Final Proj.exe">
+   <Modules>
+    <Module Name="database final proj.exe">
+     <Namespaces>
+      <Namespace Name="Database_Final_Proj">
+       <Types>
+        <Type Name="AddTransaction" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="134">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.Button1_Click(Object, EventArgs)' could contain the following variables 'Conversions.ToString(item)', 'Conversions.ToString(price)', 'Conversions.ToString(customer)', 'Conversions.ToString(employee)', 'transdate'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="148">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.Button1_Click(Object, EventArgs)' could contain the following variables 'Conversions.ToString(item)', 'Conversions.ToString(price)', 'Conversions.ToString(customer)', 'Conversions.ToString(employee)', 'transdate'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="130">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.Button1_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="139">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.Button1_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="144">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.Button1_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="153">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.Button1_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox1.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="118">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.Button1_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox3.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="122">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.Button1_Click(Object, EventArgs)' could contain the following variables 'Me.TextBox5.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ListBox1_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="23">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.ListBox1_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Me.ListBox1.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ListBox2_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="48">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.ListBox2_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Me.ListBox2.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ListBox3_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="68">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.ListBox3_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Me.ListBox3.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ListBox4_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form2.vb" Line="87">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'AddTransaction.ListBox4_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Me.ListBox4.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="delLaptop" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button2_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="delLaptop.vb" Line="21">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'delLaptop.Button2_Click(Object, EventArgs)' could contain the following variables 'Conversions.ToString(id)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ListBox1_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="delLaptop.vb" Line="67">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'delLaptop.ListBox1_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Me.ListBox1.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="delSP" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="delSP.vb" Line="85">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'delSP.Button1_Click(Object, EventArgs)' could contain the following variables 'name'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ListBox1_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="delSP.vb" Line="63">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'delSP.ListBox1_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Conversions.ToString(typeid)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="delSP.vb" Line="49">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'delSP.ListBox1_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Me.ListBox1.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Laptop" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ListBox2_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Laptop.vb" Line="45">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'Laptop.ListBox2_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Me.ListBox2.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LaptopAdd" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="newLaptop.vb" Line="29">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'LaptopAdd.Button1_Click(Object, EventArgs)' could contain the following variables 'Name', 'Conversions.ToString(price)', 'Conversions.ToString(stock)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Sparepart" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ListBox2_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Sparepart.vb" Line="80">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'Sparepart.ListBox2_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Conversions.ToString(typeid)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Sparepart.vb" Line="74">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'Sparepart.ListBox2_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Conversions.ToString(unitid)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Sparepart.vb" Line="56">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'Sparepart.ListBox2_SelectedIndexChanged(Object, EventArgs)' could contain the following variables 'Me.ListBox2.SelectedItem'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SparepartAdd" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="SparepartAdd.vb" Line="56">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'SparepartAdd.Button1_Click(Object, EventArgs)' could contain the following variables 'Conversions.ToString(price)', 'name', 'Conversions.ToString(stock)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Form1_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="SparepartAdd.vb" Line="21">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'SparepartAdd.Form1_Load(Object, EventArgs)' could contain the following variables 'Me.query'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SPstockAdd" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="ADDstockSP.vb" Line="26">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'SPstockAdd.Button1_Click(Object, EventArgs)' could contain the following variables 'Conversions.ToString(stock)', 'Conversions.ToString(id)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Transaction" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Transaction_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-03 09:14:06Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form3.vb" Line="55">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'Transaction.Transaction_Load(Object, EventArgs)' could contain the following variables 'item.Tables(0).Rows(i)(0)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form3.vb" Line="51">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'Transaction.Transaction_Load(Object, EventArgs)' could contain the following variables 'item.Tables(0).Rows(i)(1)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form3.vb" Line="60">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'Transaction.Transaction_Load(Object, EventArgs)' could contain the following variables 'item.Tables(0).Rows(i)(2)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\GitDB\Database-Final-Project\Database Final Proj" File="Form3.vb" Line="64">The query string passed to 'MySqlCommand.New(String, MySqlConnection)' in 'Transaction.Transaction_Load(Object, EventArgs)' could contain the following variables 'item.Tables(0).Rows(i)(3)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
