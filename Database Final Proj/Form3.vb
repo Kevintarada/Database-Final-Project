@@ -6,6 +6,15 @@ Public Class Transaction
     Dim query, query2, query3, query4 As String
     Dim comm, comm2, comm3, comm4 As MySqlCommand
 
+    Private Sub ListBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox3.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Dispose()
+        MainMenu.Show()
+    End Sub
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Transaction_Load(sender, e)
     End Sub
@@ -19,7 +28,7 @@ Public Class Transaction
     End Sub
 
     Private Sub Transaction_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        str = "Server=localhost; user id=root; password=; database=final_project;"
+        str = "Server=localhost; user id=root; password=; database=final_project;sslmode = none"
         con = New MySqlConnection(str)
 
         Dim item As New DataSet

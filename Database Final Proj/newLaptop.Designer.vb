@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class newLaptop
+Partial Class LaptopAdd
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -31,13 +31,14 @@ Partial Class newLaptop
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(44, 62)
+        Me.TextBox1.Location = New System.Drawing.Point(44, 35)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(174, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(256, 22)
         Me.TextBox1.TabIndex = 0
         '
         'ContextMenuStrip1
@@ -48,23 +49,23 @@ Partial Class newLaptop
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(44, 126)
+        Me.TextBox2.Location = New System.Drawing.Point(44, 86)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(174, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(125, 22)
         Me.TextBox2.TabIndex = 2
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(44, 194)
+        Me.TextBox3.Location = New System.Drawing.Point(175, 86)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(174, 22)
+        Me.TextBox3.Size = New System.Drawing.Size(125, 22)
         Me.TextBox3.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(44, 42)
+        Me.Label1.Location = New System.Drawing.Point(44, 15)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(45, 17)
         Me.Label1.TabIndex = 4
@@ -74,37 +75,50 @@ Partial Class newLaptop
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(44, 106)
+        Me.Label2.Location = New System.Drawing.Point(44, 66)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 17)
+        Me.Label2.Size = New System.Drawing.Size(40, 17)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "price"
+        Me.Label2.Text = "Price"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(44, 174)
+        Me.Label3.Location = New System.Drawing.Point(175, 66)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 17)
+        Me.Label3.Size = New System.Drawing.Size(43, 17)
         Me.Label3.TabIndex = 6
-        Me.Label3.Text = "stock"
+        Me.Label3.Text = "Stock"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(72, 247)
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button1.Location = New System.Drawing.Point(178, 124)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(116, 45)
         Me.Button1.TabIndex = 7
-        Me.Button1.Text = "ADD"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Text = "Add"
+        Me.Button1.UseVisualStyleBackColor = False
         '
-        'newLaptop
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.Info
+        Me.Button2.Location = New System.Drawing.Point(51, 124)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(116, 45)
+        Me.Button2.TabIndex = 8
+        Me.Button2.Text = "Back"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'LaptopAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(250, 315)
+        Me.ClientSize = New System.Drawing.Size(341, 197)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -112,8 +126,8 @@ Partial Class newLaptop
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Name = "newLaptop"
-        Me.Text = "newLaptop"
+        Me.Name = "LaptopAdd"
+        Me.Text = "Add Laptop"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -127,4 +141,5 @@ Partial Class newLaptop
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

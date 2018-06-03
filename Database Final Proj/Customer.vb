@@ -20,7 +20,7 @@ Public Class Customer
                     TextBox1.Text = reader.Item("id")
                     TextBox2.Text = reader.Item("name")
                     TextBox3.Text = reader.Item("address")
-                    TextBox4.Text = reader.Item("phone")
+                    TextBox4.Text = reader.Item("tel_no")
                     TextBox5.Text = reader.Item("email")
                 End While
             End If
@@ -43,7 +43,7 @@ Public Class Customer
             ListBox2.Items.Clear()
             If reader.HasRows Then
                 Do While reader.Read()
-                    ListBox2.Items.Add("name")
+                    ListBox2.Items.Add(reader.Item("name"))
                 Loop
             End If
             con.Close()
@@ -54,6 +54,16 @@ Public Class Customer
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         MainMenu.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        UPDTcust.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ADDcust.Show()
         Me.Hide()
     End Sub
 

@@ -30,11 +30,13 @@ Public Class SparepartAdd
             ComboBox1.DisplayMember = "spt_name"
         Catch ex As Exception
             MessageBox.Show("connection error occured" + ex.Message)
-
         End Try
     End Sub
 
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Dispose()
+        Sparepart.Show()
+    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         str = "server = localhost; user id = root; password=; database = Final_project; SslMode=none"

@@ -34,6 +34,7 @@ Partial Class Employee
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,6 +50,7 @@ Partial Class Employee
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Location = New System.Drawing.Point(28, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(45, 17)
@@ -63,6 +65,7 @@ Partial Class Employee
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.GroupBox1.Location = New System.Drawing.Point(204, 52)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(175, 244)
@@ -145,11 +148,22 @@ Partial Class Employee
         Me.Button3.Text = "Refresh"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(156, 326)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(98, 43)
+        Me.Button4.TabIndex = 6
+        Me.Button4.Text = "UPDATE"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Employee
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(438, 450)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -177,4 +191,5 @@ Partial Class Employee
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
 End Class

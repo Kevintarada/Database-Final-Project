@@ -1,11 +1,14 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class ADDstockSP
+Public Class SPstockAdd
     Dim con As MySqlConnection
     Dim str, query As String
     Dim comm As MySqlCommand
     Dim reader As MySqlDataReader
 
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Dispose()
+        Sparepart.Show()
+    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         str = "server = localhost; user id = root; password=; database = Final_project; SslMode=none"

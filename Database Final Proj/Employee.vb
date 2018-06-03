@@ -62,6 +62,11 @@ Public Class Employee
         Me.Hide()
     End Sub
 
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        UPDTemp.Show()
+        Me.Hide()
+    End Sub
+
     Private Sub Employee_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         str = "server = localhost; user id = root; password=; database = final_project; sslmode = none"
         con = New MySqlConnection(str)

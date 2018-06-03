@@ -1,9 +1,15 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class newLaptop
+
+Public Class LaptopAdd
     Dim con As MySqlConnection
     Dim str, query As String
     Dim comm As MySqlCommand
     Dim reader As MySqlDataReader
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Dispose()
+        Laptop.Show()
+    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         str = "server = localhost; user id = root; password=; database = Final_project; SslMode=none"
@@ -32,8 +38,5 @@ Public Class newLaptop
             MessageBox.Show("error while adding stock")
         End Try
     End Sub
-
-
-
 
 End Class

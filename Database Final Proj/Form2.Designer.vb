@@ -43,12 +43,14 @@ Partial Class AddTransaction
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.TextBox5)
         Me.GroupBox2.Controls.Add(Me.TextBox4)
@@ -76,7 +78,7 @@ Partial Class AddTransaction
         Me.Button1.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Button1.Location = New System.Drawing.Point(610, 70)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(225, 32)
+        Me.Button1.Size = New System.Drawing.Size(115, 32)
         Me.Button1.TabIndex = 22
         Me.Button1.Text = "Submit"
         Me.Button1.UseVisualStyleBackColor = False
@@ -102,7 +104,7 @@ Partial Class AddTransaction
         Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TextBox3.Location = New System.Drawing.Point(707, 21)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(128, 30)
+        Me.TextBox3.Size = New System.Drawing.Size(139, 30)
         Me.TextBox3.TabIndex = 19
         '
         'TextBox2
@@ -257,6 +259,18 @@ Partial Class AddTransaction
         Me.ListBox1.Size = New System.Drawing.Size(209, 184)
         Me.ListBox1.TabIndex = 0
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Button2.Location = New System.Drawing.Point(731, 70)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(115, 32)
+        Me.Button2.TabIndex = 23
+        Me.Button2.Text = "Back"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'AddTransaction
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -297,4 +311,5 @@ Partial Class AddTransaction
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

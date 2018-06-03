@@ -38,6 +38,7 @@ Partial Class Customer
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -53,6 +54,7 @@ Partial Class Customer
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label2.Location = New System.Drawing.Point(42, 27)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(45, 17)
@@ -61,20 +63,20 @@ Partial Class Customer
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(45, 332)
+        Me.Button1.Location = New System.Drawing.Point(148, 332)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 50)
+        Me.Button1.Size = New System.Drawing.Size(89, 50)
         Me.Button1.TabIndex = 10
         Me.Button1.Text = "refresh"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(202, 332)
+        Me.Button2.Location = New System.Drawing.Point(45, 332)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(121, 50)
+        Me.Button2.Size = New System.Drawing.Size(85, 50)
         Me.Button2.TabIndex = 11
-        Me.Button2.Text = "update"
+        Me.Button2.Text = "ADD"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
@@ -98,6 +100,7 @@ Partial Class Customer
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.GroupBox1.Location = New System.Drawing.Point(245, 45)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(217, 261)
@@ -185,11 +188,22 @@ Partial Class Customer
         Me.TextBox1.Size = New System.Drawing.Size(205, 22)
         Me.TextBox1.TabIndex = 0
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(253, 332)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(84, 49)
+        Me.Button4.TabIndex = 14
+        Me.Button4.Text = "update"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Customer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(500, 405)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -220,4 +234,5 @@ Partial Class Customer
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Button4 As Button
 End Class
